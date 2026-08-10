@@ -1,38 +1,215 @@
-.App {
+.site-shell {
+  min-height: 100vh;
+  color: #17213b;
+  background: #fff;
+}
+
+.topbar {
+  height: 52px;
+  border-top: 4px solid #444;
+  border-bottom: 1px solid #dfe3e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+.brand,
+nav a,
+.footer a {
+  color: #17213b;
+  text-decoration: none;
+}
+
+.brand {
+  font-size: 13px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 10px;
+}
+
+.signup-link {
+  border: 1px solid #087cff;
+  color: #0876e8;
+  border-radius: 3px;
+  padding: 6px 10px;
+}
+
+.content {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.pricing-section {
+  padding: 46px 0 48px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  margin: 0 0 6px;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro {
+  margin: 0 auto 28px;
+  color: #43516d;
+  font-size: 12px;
+  line-height: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.plan {
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  overflow: hidden;
+}
+
+.plan h2 {
+  margin: 0;
+  padding: 9px;
+  background: #f8f8f8;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.plan-body {
+  padding: 13px 13px 13px;
+}
+
+.price {
+  margin: 0 0 10px;
+  color: #4c6285;
+  font-size: 20px;
+}
+
+.price strong {
+  color: #111;
+  font-size: 26px;
+}
+
+.price span {
+  font-size: 19px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px;
+  font-size: 10px;
+  line-height: 16px;
+}
+
+.plan-button {
+  display: block;
+  padding: 9px 4px;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.plan-button.outline {
+  border: 1px solid #087cff;
+  color: #0876e8;
+}
+
+.plan-button.solid {
+  border: 1px solid #087cff;
+  background: #087cff;
+  color: #fff;
+}
+
+.footer {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 31px 0 0;
+  border-top: 1px solid #dfe3e8;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1fr 1fr;
+  gap: 20px;
+  font-size: 10px;
+}
+
+.footer>div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 4px;
+}
+
+.footer-brand {
+  gap: 6px !important;
+  color: #5e7090;
+}
+
+.footer-mark {
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  background: #60418b;
   color: white;
+  font-size: 12px;
+  font-weight: 700;
 }
 
-.App-link {
-  color: #61dafb;
+.footer h3 {
+  margin: 0 0 2px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.footer a {
+  color: #5e7090;
+}
+
+@media (max-width: 700px) {
+
+  .content,
+  .footer {
+    max-width: none;
+    margin-left: 20px;
+    margin-right: 20px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .plans {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .pricing-section {
+    padding-top: 32px;
+  }
+
+  .desktop-break {
+    display: none;
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 24px;
+  }
+
+  nav {
+    gap: 8px;
+  }
+
+  nav a:not(.signup-link) {
+    display: none;
   }
 }
