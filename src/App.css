@@ -5,13 +5,12 @@
 }
 
 .topbar {
-  height: 52px;
-  border-top: 4px solid #444;
+  height: 70px;
   border-bottom: 1px solid #dfe3e8;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0 24px;
   box-sizing: border-box;
 }
 
@@ -23,51 +22,51 @@ nav a,
 }
 
 .brand {
-  font-size: 13px;
+  font-size: 20px;
 }
 
 nav {
   display: flex;
   align-items: center;
-  gap: 18px;
-  font-size: 10px;
+  gap: 23px;
+  font-size: 14px;
 }
 
 .signup-link {
   border: 1px solid #087cff;
   color: #0876e8;
   border-radius: 3px;
-  padding: 6px 10px;
+  padding: 8px 13px;
 }
 
 .content {
-  max-width: 620px;
+  max-width: 930px;
   margin: 0 auto;
 }
 
 .pricing-section {
-  padding: 46px 0 48px;
+  padding: 70px 0 35px;
   text-align: center;
 }
 
 h1 {
-  margin: 0 0 6px;
-  font-size: 36px;
+  margin: 0 0 10px;
+  font-size: 56px;
   line-height: 1.2;
   font-weight: 300;
 }
 
 .intro {
-  margin: 0 auto 28px;
+  margin: 0 auto 42px;
   color: #43516d;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 30px;
 }
 
 .plans {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
   text-align: center;
 }
 
@@ -80,45 +79,45 @@ h1 {
 
 .plan h2 {
   margin: 0;
-  padding: 9px;
+  padding: 13px;
   background: #f8f8f8;
   border-bottom: 1px solid #d6d6d6;
-  font-size: 14px;
+  font-size: 24px;
   font-weight: 400;
 }
 
 .plan-body {
-  padding: 13px 13px 13px;
+  padding: 22px 20px 20px;
 }
 
 .price {
-  margin: 0 0 10px;
+  margin: 0 0 18px;
   color: #4c6285;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .price strong {
   color: #111;
-  font-size: 26px;
+  font-size: 40px;
 }
 
 .price span {
-  font-size: 19px;
+  font-size: 30px;
 }
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0 0 16px;
-  font-size: 10px;
-  line-height: 16px;
+  margin: 0 0 24px;
+  font-size: 15px;
+  line-height: 24px;
 }
 
 .plan-button {
   display: block;
-  padding: 9px 4px;
+  padding: 12px 4px;
   border-radius: 3px;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .plan-button.outline {
@@ -133,14 +132,14 @@ ul {
 }
 
 .footer {
-  max-width: 620px;
+  max-width: 930px;
   margin: 0 auto;
-  padding: 31px 0 0;
+  padding: 47px 0 0;
   border-top: 1px solid #dfe3e8;
   display: grid;
   grid-template-columns: 1.1fr 1fr 1fr 1fr;
-  gap: 20px;
-  font-size: 10px;
+  gap: 30px;
+  font-size: 15px;
 }
 
 .footer>div {
@@ -155,26 +154,27 @@ ul {
 }
 
 .footer-mark {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   display: grid;
   place-items: center;
   border-radius: 3px;
   background: #60418b;
   color: white;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 700;
 }
 
 .footer h3 {
   margin: 0 0 2px;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   color: #111;
 }
 
 .footer a {
   color: #5e7090;
+  line-height: 20px;
 }
 
 @media (max-width: 700px) {
@@ -207,6 +207,15 @@ ul {
 
   nav {
     gap: 8px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .intro {
+    font-size: 15px;
+    line-height: 24px;
   }
 
   nav a:not(.signup-link) {

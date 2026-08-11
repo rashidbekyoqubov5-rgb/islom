@@ -61,7 +61,7 @@ function App() {
 
       <footer className="footer">
         <div className="footer-brand"><span className="footer-mark">B</span><small>© 2017-2018</small></div>
-        <div id="features"><h3>Features</h3><a href="#features">Cool stuff</a><a href="#features">Random feature</a><a href="#features">Team feature</a><a href="#features">Stuff for developers</a><a href="#features">Another one</a></div>
+        <div id="features"><h3>Features</h3><a href="#features">Cool stuff</a><a href="#features">Random feature</a><a href="#features">Team feature</a><a href="#features">Stuff for developers</a><a href="#features">Another one</a><a href="#features">Last time</a></div>
         <div><h3>Resources</h3><a href="#support">Resource</a><a href="#support">Resource name</a><a href="#support">Another resource</a><a href="#support">Final resource</a></div>
         <div id="enterprise"><h3>About</h3><a href="#enterprise">Team</a><a href="#enterprise">Locations</a><a href="#enterprise">Privacy</a><a href="#enterprise">Terms</a></div>
       </footer>
